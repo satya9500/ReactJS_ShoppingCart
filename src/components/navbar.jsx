@@ -6,12 +6,13 @@ class NavBar extends Component {
     fontWeight: "bold"
   };
   render() {
+    const { totalCounters } = this.props;
     return (
       <nav className="navbar navbar-light bg-light" style={this.styles}>
         <a className="navbar-brand" href="#">
           Navbar&nbsp;
           <span className="badge badge-secondary" style={this.styles}>
-            {this.props.totalCounters}
+            {totalCounters}
           </span>
         </a>
       </nav>
